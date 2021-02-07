@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import CounterTwo from "./components/CounterTwo";
+import CounterThree from "./components/CounterThree";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -8,7 +8,7 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <CounterTwo />
+      <CounterThree />
     </div>
   );
 }
