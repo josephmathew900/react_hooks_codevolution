@@ -1,7 +1,7 @@
 import React from "react";
 import { UserContext, ChannelContext } from "../App";
 
-export default function ComponentC() {
+export default function ComponentF() {
   return (
     <div>
       <UserContext.Consumer>
