@@ -4,6 +4,7 @@ import axios from "axios";
 export default function DataFetching() {
   const [post, setPost] = useState({});
   const [id, setId] = useState(1);
+  const [idFromButtonClick, setIdFromButtonClick] = useState(1);
 
   useEffect(() => {
     axios
@@ -13,13 +14,20 @@ export default function DataFetching() {
         setPost(res.data);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.message);
       });
-  }, [id]);
+  }, [idFromButtonClick]);
+
+  const handleClick = () => {
+    setIdFromButtonClick(id);
+  };
 
   return (
     <div>
       <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+      <button type="button" onClick={handleClick}>
+        Fetch Post
+      </button>
       <div>{post.title}</div>
     </div>
   );
