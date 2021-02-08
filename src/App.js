@@ -1,13 +1,13 @@
 import "./App.css";
 import React, { useReducer } from "react";
-import DocTitleOne from "./components/customHook/DocTitleOne";
-import DocTitleTwo from "./components/customHook/DocTitleTwo";
+import CounterOne from "./components/customHook/CounterOne";
+import CounterTwo from "./components/customHook/CounterTwo";
 
 function App() {
   return (
     <div className="App">
-      <DocTitleOne />
-      <DocTitleTwo />
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
