@@ -1,13 +1,13 @@
 import "./App.css";
 import React, { useReducer } from "react";
-import DataFetchingOne from "./components/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingTwo";
 
 export const CountContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <DataFetchingOne />
+      <DataFetchingTwo />
     </div>
   );
 }
