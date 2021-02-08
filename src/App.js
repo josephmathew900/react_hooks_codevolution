@@ -1,11 +1,11 @@
 import "./App.css";
 import React, { useReducer } from "react";
-import ParentComponent from "./components/useCallback/ParentComponent";
+import Counter from "./components/useMemo/Counter";
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent />
+      <Counter />
     </div>
   );
 }
